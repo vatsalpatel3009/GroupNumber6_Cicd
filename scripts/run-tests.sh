@@ -27,4 +27,9 @@ if ! grep -q "March 15, 2026" myapp/index.html; then
   exit 1
 fi
 
-echo "All required files are present and date check passed."
+if ! grep -q "Rutvik Patel" myapp/index.html; then
+  echo "ERROR: Student name (Rutvik Patel) not found in index.html." >&2
+  exit 1
+fi
+
+echo "All required files are present and checks passed."
