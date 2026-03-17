@@ -13,7 +13,10 @@
 
   <main class="content">
       <p>Date: March 15, 2026</p>
-
+if ! grep -q "<h1>" myapp/index.html; then
+  echo "ERROR: H1 heading missing"
+  exit 1
+fi
 
     <section class="card">
       <h2>Project Info</h2>
