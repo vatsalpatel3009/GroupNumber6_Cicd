@@ -2,11 +2,9 @@ name: CI
 
 on:
   push:
-    branches:
-      - Feature_VatsalPatel
+    branches: [ cicd-prod ]
   pull_request:
-    branches:
-      - Feature_VatsalPatel
+    branches: [ cicd-prod ]
 
 jobs:
   lint:
