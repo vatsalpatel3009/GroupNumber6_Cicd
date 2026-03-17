@@ -34,4 +34,4 @@ if ! grep -q "<h1>" myapp/index.html; then
   exit 1
 fi
 
-echo "All required files are present and checks passed."
+echo "All required files are present and checks passed."git

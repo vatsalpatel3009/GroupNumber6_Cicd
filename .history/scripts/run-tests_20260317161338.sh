@@ -1,5 +1,8 @@
 #!/usr/bin/env bash
 
+# Simple sanity check script for the project.
+# You can extend this script to run linters, unit tests, or build steps.
+
 set -euo pipefail
 
 echo "Running basic sanity checks..."
@@ -25,13 +28,9 @@ if ! grep -q "March 15, 2026" myapp/index.html; then
 fi
 
 if ! grep -q "Vatsal Patel" myapp/index.html; then
-  echo "ERROR: Name missing" >&2
+  echo "ERROR: Name missing"
   exit 1
-fi
 
-if ! grep -q "<h1>" myapp/index.html; then
-  echo "ERROR: H1 heading missing" >&2
-  exit 1
+  
 fi
-
-echo "All required files are present and checks passed."
+echo "All required files are present and date check passed."
