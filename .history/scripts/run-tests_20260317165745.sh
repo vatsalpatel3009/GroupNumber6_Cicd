@@ -35,8 +35,8 @@ if ! grep -q "Vatsal Patel" myapp/index.html; then
   exit 1
 fi
 
-if ! grep -q "<h2>" myapp/index.html; then
-  echo "ERROR: H2 heading missing"
+if ! grep -q "Vatsal Patel" myapp/index.html; then
+  echo "ERROR: Name missing"
   exit 1
 fi
 echo "All required files are present and checks passed."
