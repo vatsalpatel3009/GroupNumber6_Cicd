@@ -26,7 +26,7 @@ fi
 
 
 if ! grep -q "<h1>" myapp/index.html; then
-  echo "ERROR: H1 heading missing"
+  echo "ERROR: H1 heading missing" >&2
   exit 1
 fi
 
