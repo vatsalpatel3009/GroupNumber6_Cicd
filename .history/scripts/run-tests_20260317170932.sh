@@ -25,6 +25,7 @@ if ! grep -q "March 15, 2026" myapp/index.html; then
 fi
 
 
+
 if ! grep -q "<h2>" myapp/index.html; then
   echo "ERROR: H2 heading missing"
   exit 1
