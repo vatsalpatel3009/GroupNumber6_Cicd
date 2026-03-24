@@ -27,4 +27,10 @@ if ! grep -q "March 15, 2026" myapp/index.html; then
   exit 1
 fi
 
+# Check if the page title exists and matches the same one
+if ! grep -q "<title>Capstone Project Home</title>" myapp/index.html; then
+  echo "ERROR: Missing or Mismatched title tag" >&2
+  exit 1
+fi
+
 echo "All required files are present and date check passed."
